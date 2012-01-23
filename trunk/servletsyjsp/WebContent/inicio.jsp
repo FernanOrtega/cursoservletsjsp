@@ -8,9 +8,11 @@
 </head>
 <body>
 <h2>Introduzca un valor para el parámetro</h2>
-<form method="post" action="/servletsyjsp/PrimerServlet">
-<input
+<form method="post" action="/servletsyjsp/PrimerServlet"><input
 	type="text" name="num" name="num" value="0"> <input
-	type="submit" value="enviar"></form>
+	type="submit" value="enviarPOST"></form>
+<form method="get" action="/servletsyjsp/PrimerServlet"><input
+	type="text" name="num" name="num" value="0"> <input
+	type="submit" value="enviarGET"></form>
 </body>
 </html>

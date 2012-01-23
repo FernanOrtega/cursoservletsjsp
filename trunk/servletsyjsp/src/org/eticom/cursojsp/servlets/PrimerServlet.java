@@ -13,26 +13,32 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class PrimerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public PrimerServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public PrimerServlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
 		String param = request.getParameter("num");
 		PrintWriter pw = response.getWriter();
-		pw.print("<HTML><HEAD><TITLE>Respuesta para petición get</TITLE></HEAD>");		
+		pw.print("<HTML><HEAD><TITLE>Respuesta para petición get</TITLE></HEAD>");
 		if (param != null) {
-			Integer numPeticiones = Integer.valueOf(param);
-			for (int i = 0; i < numPeticiones; i++) {
-				pw.print("<p>HOLA MUNDO</p>");
+			try {
+				Integer numPeticiones = Integer.valueOf(param);
+				for (int i = 0; i < numPeticiones; i++) {
+					pw.print("<p>HOLA MUNDO</p>");
+				}
+			} catch (NumberFormatException e) {
+				pw.print("<p>INCORRECT PARAM!</p>");
 			}
 		}
 		pw.print("</BODY></HTML>");
@@ -40,16 +46,22 @@ public class PrimerServlet extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
 		String param = request.getParameter("num");
 		PrintWriter pw = response.getWriter();
-		pw.print("<HTML><HEAD><TITLE>Respuesta para petición get</TITLE></HEAD>");		
+		pw.print("<HTML><HEAD><TITLE>Respuesta para petición get</TITLE></HEAD>");
 		if (param != null) {
-			Integer numPeticiones = Integer.valueOf(param);
-			for (int i = 0; i < numPeticiones; i++) {
-				pw.print("<p>HOLA MUNDO</p>");
+			try {
+				Integer numPeticiones = Integer.valueOf(param);
+				for (int i = 0; i < numPeticiones; i++) {
+					pw.print("<p>HOLA MUNDO</p>");
+				}
+			} catch (NumberFormatException e) {
+				pw.print("<p>INCORRECT PARAM!</p>");
 			}
 		}
 		pw.print("</BODY></HTML>");
