@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Primera página</title>
+<title>Localiza fichero</title>
 </head>
 <body>
-<h2>Curso de desarrollo de componentes web con servlets y jsp.</h2>
-<p><span>Ejercicio 1:</span></p>
-<p><a href="llamadasgetypost.jsp">Llamadas GET y POST</a></p>
-<p><span>Ejercicio 2:</span></p>
-<p><a href="llamaLocalizadorArchivos.jsp">Localizador de
-archivos</a></p>
+<h2>Introduzca el nombre del fichero</h2>
+<form method="get" action="/servletsyjsp/LocalizadorArchivos"><input
+	type="text" name="nombre" name="nombre" value=""> <input
+	type="submit" value="enviarGET"></form>
+</body>
 </html>
