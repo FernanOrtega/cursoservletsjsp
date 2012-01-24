@@ -34,7 +34,7 @@ public class PrimerServlet extends HttpServlet {
 		if (param != null) {
 			try {
 				Integer numPeticiones = Integer.valueOf(param);
-				for (int i = 0; i < numPeticiones; i++) {
+				for (int i = 0; i < numPeticiones && i < 9999; i++) {
 					pw.print("<p>HOLA MUNDO</p>");
 				}
 			} catch (NumberFormatException e) {
@@ -57,7 +57,7 @@ public class PrimerServlet extends HttpServlet {
 		if (param != null) {
 			try {
 				Integer numPeticiones = Integer.valueOf(param);
-				for (int i = 0; i < numPeticiones; i++) {
+				for (int i = 0; i < numPeticiones && i < 9999; i++) {
 					pw.print("<p>HOLA MUNDO</p>");
 				}
 			} catch (NumberFormatException e) {
