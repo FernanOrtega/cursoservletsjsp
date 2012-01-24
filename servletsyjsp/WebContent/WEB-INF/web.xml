@@ -19,4 +19,14 @@
     <servlet-name>PrimerServlet</servlet-name>
     <url-pattern>/PrimerServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LocalizadorArchivos</display-name>
+    <servlet-name>LocalizadorArchivos</servlet-name>
+    <servlet-class>org.eticom.cursojsp.servlets.LocalizadorArchivos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocalizadorArchivos</servlet-name>
+    <url-pattern>/LocalizadorArchivos</url-pattern>
+  </servlet-mapping>
 </web-app>
