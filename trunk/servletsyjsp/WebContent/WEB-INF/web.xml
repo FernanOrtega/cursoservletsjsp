@@ -29,4 +29,39 @@
     <servlet-name>LocalizadorArchivos</servlet-name>
     <url-pattern>/LocalizadorArchivos</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>org.eticom.cursojsp.servlets.empleo.LoginServlet</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>username</param-name>
+      <param-value>parado</param-value>
+    </init-param>
+    <init-param>
+      <description></description>
+      <param-name>password</param-name>
+      <param-value>parado</param-value>
+    </init-param>
+    <init-param>
+      <description></description>
+      <param-name>loginsuccess</param-name>
+      <param-value>false</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListadoEmpleo</display-name>
+    <servlet-name>ListadoEmpleo</servlet-name>
+    <servlet-class>org.eticom.cursojsp.servlets.empleo.ListadoEmpleo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListadoEmpleo</servlet-name>
+    <url-pattern>/ListadoEmpleo</url-pattern>
+  </servlet-mapping>
 </web-app>

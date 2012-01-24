@@ -8,22 +8,26 @@
 </head>
 <body>
 <script type="text/javascript">
-function validar(value){
-	if(/^([0-9])*$/.test(value)){
-		return true;
-	} else {
-		return false;
+	function validar(obj) {
+
+		var valor = obj.num.value;
+
+		if (!/^([0-9])*$/.test(valor)) {
+			alert('No es un número');
+		}
+		else if (valor == '' || valor == '0') {
+			alert('Introduzca un valor');
+		} else {
+			obj.submit();
+		}
 	}
-}
 </script>
 <h2>Introduzca un valor para el parámetro</h2>
-<form method="post" action="/servletsyjsp/PrimerServlet"
-	onsubmit="return validar(this.num.value);"><input
+<form name="postsend" method="post" action="/servletsyjsp/PrimerServlet"><input
 	type="text" name="num" name="num" value="0"> <input
-	type="submit" value="enviarPOST"></form>
-<form method="get" action="/servletsyjsp/PrimerServlet"
-	onsubmit="return validar(this.num.value);"><input
+	type="button" value="enviarPOST" onclick="validar(document.postsend)"></form>
+<form name="getsend" method="get" action="/servletsyjsp/PrimerServlet"><input
 	type="text" name="num" name="num" value="0"> <input
-	type="submit" value="enviarGET"></form>
+	type="button" value="enviarGET" onclick="validar(document.getsend)"></form>
 </body>
 </html>

@@ -13,4 +13,7 @@
 <p><span>Ejercicio 2:</span></p>
 <p><a href="llamaLocalizadorArchivos.jsp">Localizador de
 archivos</a></p>
+<p><span>Ejercicio 3:</span></p>
+<p><a href="LoginServlet">Login</a></p>
+</body>
 </html>
