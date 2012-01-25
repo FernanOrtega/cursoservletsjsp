@@ -15,5 +15,9 @@
 archivos</a></p>
 <p><span>Ejercicio 3:</span></p>
 <p><a href="LoginServlet">Login</a></p>
+<p><span>Ejercicio 4:</span></p>
+<p><a href="numllamadas.jsp">Número de llamadas a página JSP.</a></p>
+<p><span>Ejercicio 5:</span></p>
+<p><a href="insertarcv.jsp">Formulario 100% en jsp.</a></p>
 </body>
 </html>
