@@ -1,0 +1,42 @@
+
+
+
+<select name="estudios">
+		<option value="nulo">---</option>
+		<option value="uni">Universitarios</option>
+		<option value="fp">Formación profesional</option>
+		<option value="eso">Enseñanza secundaria</option>
+		<option value="vida">La escuela de la vida</option>
+</select>
+		
+
+
+<input 
+	type="radio" 
+	name="nivelSalarial" 
+	value="nivelBajo"
+	
+	/> 
+	menos de 18.000 &euro;
+<input 
+	type="radio" 
+	name="nivelSalarial" 
+	value="nivelMedio"
+	
+	/> 
+	entre 18.000 y 24.000 &euro;
+<input 
+	type="radio" 
+	name="nivelSalarial" 
+	value="nivelAlto" 
+					
+	/> 
+	más de 24.000 &euro;
+			
+
+			
+<input 
+	type="checkbox" 
+	name="movilidad" 
+	value="movilidad" 
+	/>
