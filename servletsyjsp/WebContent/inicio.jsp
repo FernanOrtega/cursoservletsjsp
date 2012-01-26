@@ -21,5 +21,9 @@ archivos</a></p>
 <p><a href="insertarcv.jsp">Formulario 100% en jsp.</a></p>
 <p><span>Ejercicio 6:</span></p>
 <p><a href="insertarpreferencias.jsp">Preferencias</a></p>
+<p><span>Ejercicio 7:</span></p>
+<p><a href="lanzamientoerror.jsp">Tratamiento de errores</a></p>
+<p><span>Ejercicio 8:</span></p>
+<p><a href="esqueleto.jsp">Composición de JSP</a></p>
 </body>
 </html>
