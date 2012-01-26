@@ -1,1 +1,1 @@
-CABECERA
+CABECERA <%=request.getParameter("NOMBRE")%>
