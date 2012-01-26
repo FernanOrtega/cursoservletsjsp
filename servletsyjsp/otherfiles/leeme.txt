@@ -1,0 +1,21 @@
+-----------------------
+PREPARACIÓN DEL ENTORNO
+-----------------------
+
+
+Instalar java (hace falta Java 6, puesto en WS 2008 no funciona bien con Java 5)
+--------------------------------------------------------------------------------
+Copiar jdk.6.0_26 en C:\Program Files (x86)\Java y descomprimirlo
+Definir JAVA_HOME e incluir bin en el PATH 
+
+
+Instalar Eclipse:
+-----------------
+Copiar la carpeta eclipse en c:\eclipse
+Entrar en Eclipse y confirmar que se ha reconocido el JDK dentro de los JRE instalados
+
+
+Instalar Tomcat:
+-------------------
+Copiar apache-tomcat-6.0.18.zip a C:\Program Files (x86) y descomprimirlo
+Entrar en Eclipse y crear un nuevo servidor haciendo referencia a la carpeta donde se ha instalado el TOMCAT

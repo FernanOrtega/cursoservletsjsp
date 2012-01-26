@@ -19,5 +19,7 @@ archivos</a></p>
 <p><a href="numllamadas.jsp">Número de llamadas a página JSP.</a></p>
 <p><span>Ejercicio 5:</span></p>
 <p><a href="insertarcv.jsp">Formulario 100% en jsp.</a></p>
+<p><span>Ejercicio 6:</span></p>
+<p><a href="insertarpreferencias.jsp">Preferencias</a></p>
 </body>
 </html>

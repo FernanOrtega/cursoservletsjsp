@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<jsp:useBean id="preferencias" scope="request" class="near.eticom.beans.Preferencias"></jsp:useBean>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+String primeraVisita = request.getParameter("primeraVisita");
+boolean verificarValores = true;
+
+if (primeraVisita == null || primeraVisita.equals("")) {
+	primeraVisita = "no";
+	verificarValores = false;%>
+<%} %>
+
+<form action=ServletProcesarPreferencias method="post">
+<table border="0">
+	<tr>
+		<td>Email de contacto:</td>
+		<td>
+		<input type="text" name="email"/>
+		<%if (verificarValores && preferencias.getEmail() == null ) {%> <font color="red">Campo requerido</font> <%}%>
+		</td> 
+	</tr>
+	<tr>
+		<td>Notificarme nuevas ofertas:
+			<input 
+				type="checkbox" 
+				name="notificar" 
+				value=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>Enviarme ofertas de:</td>
+		<td> <select name="categoria">
+				<option value="nulo">---</option>
+  				<option value="inf">Analista/Programador</option>
+  				<option value="bd">Administrador de Base de Datos</option>
+  				<option value="ssii">Técnico de Sistemas</option>
+  			</select>
+  		<%if (verificarValores && preferencias.getCategoria() == null ) {%> <font color="red">Campo requerido</font> <%}%>
+		</td>
+	</tr>
+	<tr>
+		<td>Visibilidad de mi cv:</td>
+		<td> 
+			<input 
+				type="radio" 
+				name="visibilidad" 
+				value="todas"/> 
+				Todas las empresas
+			<input 
+				type="radio" 
+				name="visibilidad" 
+				value="parte"/> 
+				Sólo a las que se les envío el cv
+			<%if (verificarValores && preferencias.getVisibilidad() == 0 ) {%> <font color="red">Campo requerido</font> <%}%>
+		</td>
+	</tr>
+
+</table>
+<input type="hidden" name="primeraVisita" value="no">
+<input type="submit" value="Enviar"/>
+</form>
+ 
+</body>
+</html>
