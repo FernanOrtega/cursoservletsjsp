@@ -7,7 +7,8 @@
 <title>Esqueleto</title>
 </head>
 <body>
-<jsp:include page="cabecera.jsp"></jsp:include>
+<jsp:include page="cabecera.jsp">
+<jsp:param value="VALOR" name="NOMBRE"/></jsp:include>
 <p>
 ESTE ES EL CUERPO
 </p>
